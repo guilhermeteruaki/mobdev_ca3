@@ -9,24 +9,15 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'films',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../films/films.module').then( m => m.FilmsPageModule)
-          },
-          {
-            path: ':id',
-            loadChildren: () => import('../film-details/film-details.module').then( m => m.FilmDetailsPageModule)
-          }
-        ]
-      },
-      {
         path: 'characters',
         children: [
           {
             path: '',
             loadChildren: () => import('../characters/characters.module').then( m => m.CharactersPageModule)
+          },
+          {
+            path: ':id',
+            loadChildren: () => import('../characters-details/characters-details.module').then( m => m.CharactersDetailsPageModule)
           }
         ]
       },
@@ -61,7 +52,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/films',
+    redirectTo: '/tabs/characters',
     pathMatch: 'full'
   }
 ];

@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'death-count',
     loadChildren: () => import('./pages/death-count/death-count.module').then( m => m.DeathCountPageModule)
+  },
+  {
+    path: 'characters-details',
+    loadChildren: () => import('./pages/characters-details/characters-details.module').then( m => m.CharactersDetailsPageModule)
   }
 ];
 
