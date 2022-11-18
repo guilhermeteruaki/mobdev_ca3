@@ -1,1 +1,21 @@
-Hello world
+This is an CA for Mob Dev + CBWA course in CCT.
+
+BY Guilherme Teruaki CCT No 2022047
+
+To run this projec open it on GitPod by adding the following URL to the github link 
+gitpod.io#
+This project was based with in class materials and some parts were found in the following websites:
+
+Ionic Icons:
+https://ionic.io/ionicons/v4
+
+Back button:
+https://ionicframework.com/docs/api/back-button
+
+Background colour
+https://www.color-hex.com/color-palette/9548
+https://forum.ionicframework.com/t/want-to-change-style-and-color-of-the-lines-of-ion-item-in-ion-list/162985
+
+CSS styling
+https://forum.ionicframework.com/t/remove-bottom-border-from-ion-item-in-ionic-4/142690/8
+https://stackoverflow.com/questions/31772742/changing-background-color-of-ionic-ion-item-in-css

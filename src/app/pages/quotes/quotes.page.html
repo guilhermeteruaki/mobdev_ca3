@@ -17,7 +17,7 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-list>
+  <ion-list line >
     <ion-item  *ngFor="let quotes of quotes | async">
       {{ quotes.quote }} By: {{quotes.author}}
     </ion-item>
