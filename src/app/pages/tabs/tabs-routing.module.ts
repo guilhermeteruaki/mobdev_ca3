@@ -22,20 +22,38 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'people',
+        path: 'characters',
         children: [
           {
             path: '',
-            loadChildren: () => import('../people/people.module').then( m => m.PeoplePageModule)
+            loadChildren: () => import('../characters/characters.module').then( m => m.CharactersPageModule)
           }
         ]
       },
       {
-        path: 'planets',
+        path: 'death-count',
         children: [
           {
             path: '',
-            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
+            loadChildren: () => import('../death-count/death-count.module').then( m => m.DeathCountPageModule)
+          }
+        ]
+      },
+      {
+        path: 'episode',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../episodes/episodes.module').then( m => m.EpisodesPageModule)
+          }
+        ]
+      },
+      {
+        path: 'quotes',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../quotes/quotes.module').then( m => m.QuotesPageModule)
           }
         ]
       }
