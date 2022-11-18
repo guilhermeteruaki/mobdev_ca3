@@ -18,9 +18,11 @@
 
 <ion-content class="ion-padding">
     There was an astonishing 
-  <ion-list>
+  <ion-list lines="none" >
     <ion-item *ngFor="let deathcount of deathcount | async">
-    <h2> {{ deathcount.deathCount }} </h2>
+    <ion-icon name="Skull" ></ion-icon>
+    <h2 class="item-content"> {{ deathcount.deathCount }} </h2>
+    <ion-icon name="Skull"></ion-icon>
     </ion-item>
     Deaths in the series!! 
 

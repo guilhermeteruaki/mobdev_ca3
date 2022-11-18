@@ -22,13 +22,16 @@
   <ion-card *ngIf="episodes" class="character-card">
     
     <ion-card-content>
+      <ion-icon name="videocam" slot= "start"></ion-icon>
       Episode number: {{ episodes.episode }}
      </ion-card-content>
     <ion-card-content>
+      <ion-icon name="alert" slot= "start"></ion-icon>
      Season: {{ episodes.season }}
     </ion-card-content>
 
     <ion-card-content>
+      <ion-icon name="calendar" slot= "start"></ion-icon>
       Aired in: {{ episodes.air_date }}
     </ion-card-content>
  
