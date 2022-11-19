@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbarcolor="primary">
     <ion-buttons slot="start" defaultHref="/tabs/(films:films)">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Death Count</ion-title>
+    <ion-title class="grad" >Death Count</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="unfavoriteFilm()" *ngIf="isFavorite">
         <ion-icon name="star" slot="icon-only" color="secondary"></ion-icon>
@@ -16,7 +16,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding centered" >
     There was an astonishing 
   <ion-list lines="none" >
     <ion-item *ngFor="let deathcount of deathcount | async">

@@ -4,7 +4,7 @@
     <ion-buttons slot="start" defaultHref="/tabs/(films:films)">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ characters?.name }}</ion-title>
+    <ion-title class="grad" >{{ characters?.name }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="unfavoriteFilm()" *ngIf="isFavorite">
         <ion-icon name="star" slot="icon-only" color="secondary"></ion-icon>
